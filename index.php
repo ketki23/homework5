@@ -152,7 +152,7 @@ class strings
 
 class Leapyear 
 {
-	static public function arrays($years)
+	public static function arrays($years)
 	{
 		foreach($years as $year)
         { 
@@ -161,7 +161,7 @@ class Leapyear
     }
 
 
-	static public function arrayIf($years)
+	public static function arrayIf($years)
 		{
 			for($i=0; $i<count($years); $i++)
 			{
@@ -171,11 +171,11 @@ class Leapyear
 
 
 
-	static public function check($year)
+	public static function check($year)
 	{
 		$val = ( ($year % 4 == 0) and ($year % 100 != 0) or ($year % 400 == 0) );
 
-		$str = '';
+		$string = '';
 
 		switch ($val) 
 		{
